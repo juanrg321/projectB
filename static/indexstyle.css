@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0)50%,rgba(0, 0, 0, 0)50%), url("black-silk-fabric-texture-background.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+}
+navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #b4e3d9;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.returnButton{
+    width: 240px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.content h1{
+font-family: 'Snell Roundhand, cursive';
+font-size: 60px;
+font-weight: 100;
+margin-top: 24px;
+margin-bottom: 15px;
+color: #f8f8f8;
+
+}
+.returnButton:hover{
+    background: #fff;
+    color: #b4e3d9;
+}
+.returnButton a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

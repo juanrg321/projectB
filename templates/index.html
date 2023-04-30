@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="{{ url_for('static', filename = 'indexstyle.css')}}">
+    <body style ='color: white'></p>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+        </div>
+        <div class="content">
+        <div class="form">
+    <form method = "POST">
+    {% block content %}
+    <br></br>
+    <br></br>
+    <br></br>
+    <ul>
+        <span style = "font-family: Snell Roundhand, cursive; font-size:30px;">
+    {{ form.hidden_tag() }}
+
+    {{ form.title.label(class = "form-label") }}
+    {{ form.title(class = "form-control") }}
+    <br/>
+
+    {{ form.author.label(class = "form-label") }}
+    {{ form.author(class = "form-control") }}
+    <br/>
+    {{ form.content.label(class = "form-label") }}
+    {{ form.content(class = "form-control") }}
+    <br/>
+    {{ form.submit(class = 'btn btn-primary')}}
+    </form>
+</span>
+</ul>
+    {% endblock %}
+   
+</body>
+</html>

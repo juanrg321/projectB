@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style ='color: white'></p>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+        </div>
+        <div class="content">
+        <div class="form">
+    <form method = "POST">
+    {% block content %}
+    <button class="returnButton"><a href="{{url_for('index')}}">Make a Post</a></button>
+    {% for our_posts in our_posts %}
+   <center>
+    <body style ='color: rgb(113, 113, 113); font-family: Snell Roundhand, cursive; font-size:40px;'></p>
+    
+    <strong><h2> {{ our_posts.title }}</h2></strong>
+    <small>By: {{ our_posts.author }}</small><br/>
+    <large>{{ our_posts.content }} </large> <br/><br/>
+    <small>{{ our_posts.date_posted }}</small> <br/>
+</div>
+<br/>
+     <br/>
+</center>
+    {% endfor %}
+    {% endblock %}
