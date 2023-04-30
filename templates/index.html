@@ -15,13 +15,14 @@
         </div>
         <div class="content">
         <div class="form">
-    <form method = "POST">
+    
     {% block content %}
     <br></br>
     <br></br>
     <br></br>
     <ul>
         <span style = "font-family: Snell Roundhand, cursive; font-size:30px;">
+        <form method = "POST">
     {{ form.hidden_tag() }}
 
     {{ form.title.label(class = "form-label") }}
